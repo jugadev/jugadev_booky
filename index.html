@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    <meta name="auteur" content="Koch Thomas" />
+    <meta name="description" content="prototype du site Booky" />
+
+    <script src="https://kit.fontawesome.com/de1a67eeab.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.google.com/share?selection.family=Raleway:wght@100" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="./Koch_Thomas_2_CSS_072022/CSS/style.css" />
+    <link rel="stylesheet" href="./Koch_Thomas_2_CSS_072022/CSS/normalize.css" />
+
+
+    <title> Booky </title>
+
+</head>
+
+
+<body>
+    <div class="main_container">
+    <header>
+        <!--rendre actif les élément d'encre-->
+        <div class="logo_header">
+            <img class="logo" src="./Koch_Thomas_3_images_0072022/logo/Booki.png" alt="logo_booki">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hébergements">Hébergements</a></li>
+                <li><a href="#activités">Activités</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section class="recherche">
+            <h1 class=titre_article>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+
+            <!--Barre de recherche-->
+
+            <form>
+                <div class="barre_de_recherche">
+                    <label for="recherche"><i class="fa-solid fa-location-dot"></i></label>
+                    <input type="text" name="recherche" id="recherche" placeholder="Marseille, France" />
+                    <input type="submit" id="bouton_rechercher" value="Rechercher" />
+                    <button class="icone_loupe" type="submit"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+                </div>
+
+            </form>
+
+            <!-- filtres -->
+            <div class="barre_de_filtre">
+                <p class="titre_filtre">Filtres</p>
+                <div class="filtres_interactifs">
+                    <div class="filtre_interactif">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <p>Économique</p>
+                    </div>
+                    <div class="filtre_interactif">
+                        <i class="fa-solid fa-child-reaching"></i>
+                        <p>Familial</p>
+                    </div>
+                    <div class="filtre_interactif">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>Romantique</p>
+                    </div>
+                    <div class="filtre_interactif">
+                        <i class="fa-solid fa-dog"></i>
+                        <p>Animaux autorisés</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <div class="info_logement">
+            <i class="fa-solid fa-info"></i>
+            <p> Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+
+        <!-- Hébergements -->
+        <section class="hébergement" id="hébergements">
+            <section class="hébergements_marseille">
+
+                <h2 class="titre_hébergement">Hébergements à Marseille</h2>
+
+                <div class="cartes_conteneur">
+
+                    <a href="#" class="carte">
+                        <article class="carte_hébergement">
+                            <img src="./Koch_Thomas_3_images_0072022/hebergements/4_small/Auberge_La_Cannebière.jpg"
+                                alt="photo chambre Auberge La Cannebière">
+                            <div class="carte_texte_1">
+                                <h3>Auberge La Cannebière</h3>
+                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <div class="notation">
+                                    <span style="color: #0065FC;">
+                                        <i class="fa-solid fa-star blue-star"></i> <i
+                                            class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                    </span>
+                                    <span style="color: #d9d9d9">
+                                        <i class="fa-solid fa-star grey-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+
+                    <a href="#" class="carte">
+                        <article class="carte_hébergement">
+                            <img src="./Koch_Thomas_3_images_0072022/hebergements/4_small/Hôtel_du_port.jpg" alt="photo chambre Hôtel du port">
+                            <div class="carte_texte_1">
+                                <h3>Hôtel du port</h3>
+                                <p>Nuit à partir de 52<strong>€</strong></p>
+                                <div class="notation">
+                                    <span style="color: #0065FC;">
+                                        <i class="fa-solid fa-star blue-star"></i> <i
+                                            class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="#" class="carte">
+                        <article class="carte_hébergement">
+                            <img src="./Koch_Thomas_3_images_0072022/hebergements/4_small/Hôtel_les_mouettes.jpg"
+                                alt="photo chambre Hôtel les mouettes">
+                            <div class="carte_texte_1">
+                                <h3>Hôtel les mouettes</h3>
+                                <p>Nuit à partir de 76<strong>€</strong></p>
+                                <div class="notation">
+                                    <span style="color: #0065FC;">
+                                        <i class="fa-solid fa-star blue-star"></i> <i
+                                            class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                    </span>
+                                    <span style="color: #d9d9d9">
+                                        <i class="fa-solid fa-star grey-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="#" class="carte">
+                        <article class="carte_hébergement">
+                            <img src="./Koch_Thomas_3_images_0072022/hebergements/4_small/Hôtel_de_la_mer.jpg"
+                                alt="photo chambre Hôtel de la mer">
+                            <div class="carte_texte_1">
+                                <h3>Hôtel de la mer</h3>
+                                <p>Nuit à partir de 46<strong>€</strong></p>
+                                <div class="notation">
+                                    <span style="color: #0065FC;">
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                    </span>
+                                    <span style="color: #d9d9d9">
+                                        <i class="fa-solid fa-star grey-star"></i>
+                                        <i class="fa-solid fa-star grey-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="#" class="carte">
+                        <article class="carte_hébergement">
+                            <img src="./Koch_Thomas_3_images_0072022/hebergements/4_small/Auberge_Le_Panier.jpg"
+                                alt="photo chambre Auberge Le Panier">
+                            <div class="carte_texte_1">
+                                <h3>Auberge Le Panier</h3>
+                                <p>Nuit à partir de <strong>23€</strong></p>
+                                <div class="notation">
+                                    <span style="color: #0065FC;">
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                    </span>
+                                    <span style="color: #d9d9d9">
+                                        <i class="fa-solid fa-star grey-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="#" class="carte">
+                        <article class="carte_hébergement">
+                            <img src="./Koch_Thomas_3_images_0072022/hebergements/4_small/Hôtel_chez_Amina.jpg"
+                                alt="photo chambre Hôtel chez Amina">
+                            <div class="carte_texte_1">
+                                <h3>Hôtel chez Amina</h3>
+                                <p>Nuit à partir de 96<strong>€</strong></p>
+                                <div class="notation">
+                                    <span style="color: #0065FC;">
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <p class="afficher plus">Afficher plus</p>
+
+            </section>
+
+            <!-- les plus populaires -->
+
+            <aside class="hébergement_populaires">
+
+                <div class="en_tête_populaire">
+                    <h2 class="titre_aside">Les plus populaires</h2>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="cartes_conteneur2">
+
+                    <a href="#" class="populaire">
+                        <article class="carte_populaire">
+                            <img src="./Koch_Thomas_3_images_0072022/hebergements/4_small/Hôtel_le_soleil_du_matin.jpg"
+                                alt="chambre hôtel le soleil du matin">
+                            <div class="carte_texte_2">
+                                <div class="texte_conteneur">
+                                    <h3>Hôtel le soleil du matin</h3>
+                                    <p>Nuit a partir de 128 <strong>€</strong></p>
+                                </div>
+                                <div class="notation_populaire">
+                                    <span style="color: #0065FC;">
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="#" class="populaire">
+                        <article class="carte_populaire">
+                            <img src="./Koch_Thomas_3_images_0072022/hebergements/4_small/Au_coeur_de_l'eau_Chambres_d'hôtes.jpg"
+                                alt="chambre au cœur de l'eau chambre d'hôtes">
+                            <div class="carte_texte_2">
+                                <div class="texte_conteneur">
+                                    <h3>Au cœur de l'eau Chambres d'hôtes</h3>
+                                    <p>Nuit a partir de 71 <strong>€</strong></p>
+                                </div>
+                                <div class="notation_populaire">
+                                    <span style="color: #0065FC;">
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                    </span>
+                                    <span style="color: #d9d9d9;">
+                                        <i class="fa-solid fa-star grey-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="#" class="populaire">
+                        <article class="carte_populaire">
+                            <img src="./Koch_Thomas_3_images_0072022/hebergements/4_small/Hôtel_Tout_bleu_et_Blanc.jpg"
+                                alt="chambre hôtel tout bleu et blanc">
+                            <div class="carte_texte_2">
+                                <div class="texte_conteneur">
+                                    <h3>Hôtel Tout bleu et Blanc</h3>
+                                    <p>Nuit a partir de 68 <strong>€</strong></p>
+                                </div>
+
+                                <div class="notation_populaire">
+                                    <span style="color: #0065FC;">
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                        <i class="fa-solid fa-star blue-star"></i>
+                                    </span>
+                                    <span style="color: #d9d9d9;">
+                                        <i class="fa-solid fa-star grey-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+
+            </aside>
+
+        </section>
+
+        <!-- Activités-->
+        
+        <section class="activités_marseille" id="activités">
+
+            <h2 class="titre_activités">Activités à Marseille</h2>
+            <section class="conteneur_activité">
+
+                <article class="activité_grande_carte_vieux_port">
+                    <a href="#" class="activité_grande_carte">
+                        <img  src="./Koch_Thomas_3_images_0072022/activites/4_small/vieux_port.jpg" alt="Vieux Port">
+                           
+                        <div class="titre_carte_activité">
+                            <h3>Vieux Port</h3>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="conteneur_activité_petites_cartes">
+                    <a href="#" class="activité_petite_carte">
+                        <img class="activité_fort_pomègues" src="./Koch_Thomas_3_images_0072022/activites/4_small/fort_de_pomègues.jpg"
+                            
+                            alt="Fort de Pomègues">
+                        <div class="titre_carte_activité">
+                            <h3>Fort de Pomègues</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="activité_petite_carte">
+                        <img class="activité_frioul"  src="./Koch_Thomas_3_images_0072022/activites/4_small/iles_du_frioul.jpg" alt="Îles du Frioul">
+                           
+                        <div class="titre_carte_activité">
+                            <h3>Îles du Frioul</h3>
+                        </div>
+                    </a>
+
+                </article>
+
+                <article class="activité_grande_carte_calanques">
+                    <a href="#" class="activité_grande_carte">
+                        <img src="./Koch_Thomas_3_images_0072022/activites/4_small/parc_national_des_calanques.jpg"
+                            
+                            alt="Parc National des Calanques">
+                        <div class="titre_carte_activité">
+                            <h3>Parc National des Calanques</h3>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="conteneur_activité_petites_cartes_2">
+                    <a href="#" class="activité_petite_carte">
+                        <img class="activité_notre_dame" src="./Koch_Thomas_3_images_0072022/activites/4_small/notre_dame_de_la_garde.jpg"
+                           
+                            alt="Notre Dame de la Garde">
+                        <div class="titre_carte_activité">
+                            <h3>Notre-Dame-de-la-Garde</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="activité_petite_carte">
+                        <img class="activité_longchamp" src="./Koch_Thomas_3_images_0072022/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp">
+                            
+                        <div class="titre_carte_activité">
+                            <h3>Parc Longchamp</h3>
+                        </div>
+                    </a>
+                </article>
+            </section>
+
+        </section>
+    </main>
+
+        
+    <!-- pied de page -->
+    <footer>
+
+        <div class="pied_de_page">
+
+            <div class="a_propos">
+                <p>A propos</p>
+                <ul>
+                    <li> <a href="#">Fonctionnement du site</a></li>
+                    <li> <a href="#">Conditions générales de vente</a></li>
+                    <li> <a href="#"> Données et confidientialité</a></li>
+                </ul>
+            </div>
+
+            <div class="nos_hébergement">
+                <p>Nos hébergements</p>
+                <ul>
+                    <li><a href="#">Charte de qualité</a></li>
+                    <li><a class="lien_pied_de_page" href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+
+            <div class="assistance">
+                <p>Assitance</p>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
